@@ -5,6 +5,7 @@ using namespace std;
 int convert(string &s, unordered_map<int, int> &um){
     int res = 0;
 
+    for(int i = 0; i < s.length(); i++){
         res = res * 10 + (um[s[i] - '0']);
     }
     return res;
